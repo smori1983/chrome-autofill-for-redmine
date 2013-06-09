@@ -91,7 +91,8 @@ autofill.actionMapper = (function() {
         _findByAction(
             action,
             function(foundAction) {
-                _update(foundAction, function(updatedAction) {
+                action.rowid = foundAction.rowid;
+                _update(action, function(updatedAction) {
                     _callable(callback, function() {
                         callback(updatedAction);
                     });
