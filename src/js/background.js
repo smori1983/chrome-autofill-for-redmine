@@ -11,4 +11,18 @@ db.transaction(function(tx) {
     console.log(error);
 });
 
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    switch (request.operation) {
+        case "ask":
+            autofill.autofillMapper.findByUrlPattern(request.urlPattern, function(autofillInfo) {
+                sendResponse(autofillInfo);
+            });
+            break;
+        case "register":
+            autofill.autofillMapper.upsertAction(request.action);
+            break;
+    }
+    return true;
+});
+
 })();

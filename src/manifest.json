@@ -15,6 +15,11 @@
 
     "background": {
         "scripts": [
+            "js/autofill/projectGroupMapper.js",
+            "js/autofill/projectMapper.js",
+            "js/autofill/actionMapper.js",
+            "js/autofill/patternMapper.js",
+            "js/autofill/autofillMapper.js",
             "js/background.js"
         ],
         "persistent": false
