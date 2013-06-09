@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>chrome autofill for redmine</title>
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+</head>
+<body class="m50">
+
+<div class="mBottom50">
+    <h2>グループ管理</h2>
+    <h3 class="mBottom20">入力項目はグループごとに記録します。各プロジェクトをいずれかのグループに登録します。</h3>
+    <form id="js_form_project_group">
+        <input type="text" value="" id="js_input_project_group" class="w500" placeholder="例: サンプルグループ" />        
+        <input type="submit" value="グループを追加" />
+    </form>
+    <ul id="js_list_project_group"></ul>
+</div>
+
+<div class="mBottom50">
+    <h2>プロジェクト管理</h2>
+    <h3 class="mBottom20">Redmineのプロジェクトトップページ</h3>
+    <form id="js_form_project">
+        <select id="js_input_project_project_group" class="minw200"></select>
+        <input type="text" value="" id="js_input_project" class="w500" placeholder="例: https://example.com/sample_project/" />
+        <input type="submit" value="プロジェクトを追加" />
+    </form>
+    <ul id="js_list_project"></ul>
+</div>
+
+<div class="mBottom50">
+    <h2>パターン管理</h2>
+    <h3 class="mBottom20">Redmineで入力項目を記録するページのパターン</h3>
+    <form id="js_form_pattern">
+        <input type="text" value="" id="js_input_pattern" class="w500" placeholder="例: issues/new" />
+        <input type="submit" value="パターンを追加" />
+    </form>
+    <ul id="js_list_pattern"></ul>
+</div>
+
+<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/js/autofill/projectGroupMapper.js"></script>
+<script type="text/javascript" src="/js/autofill/projectMapper.js"></script>
+<script type="text/javascript" src="/js/autofill/patternMapper.js"></script>
+<script type="text/javascript" src="/js/options.js"></script>
+</body>
+</html>
