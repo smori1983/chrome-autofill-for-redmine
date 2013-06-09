@@ -1,0 +1,37 @@
+html, body, h1, h2, h3, h4, h5, h6, div {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 12px;
+}
+
+html, input, select {
+    font-family: "メイリオ", Meiryo;
+}
+
+.w100 { width: 100px; }
+.w200 { width: 200px; }
+.w300 { width: 300px; }
+.w400 { width: 400px; }
+.w500 { width: 500px; }
+
+.minw100 { min-width: 100px; }
+.minw200 { min-width: 200px; }
+.minw300 { min-width: 300px; }
+.minw400 { min-width: 400px; }
+.minw500 { min-width: 500px; }
+
+.m10 { margin: 10px; }
+.m20 { margin: 20px; }
+.m30 { margin: 30px; }
+.m40 { margin: 40px; }
+.m50 { margin: 50px; }
+
+.mBottom10 { margin-bottom: 10px; }
+.mBottom20 { margin-bottom: 20px; }
+.mBottom30 { margin-bottom: 30px; }
+.mBottom40 { margin-bottom: 40px; }
+.mBottom50 { margin-bottom: 50px; }
