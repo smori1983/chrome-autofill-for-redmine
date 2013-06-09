@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+
+    "name": "chrome autofill for redmine",
+    "description": "chrome autofill for redmine",
+    "version": "0.1.0",
+
+    "content_scripts": [{
+        "matches": ["https://*/*", "http://*/*"],
+        "js": [
+            "js/jquery-1.9.1.min.js",
+            "js/content.js"
+        ]
+    }],
+
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ],
+        "persistent": false
+    },
+
+    "options_page": "html/options.html"
+}
