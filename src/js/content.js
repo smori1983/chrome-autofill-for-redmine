@@ -5,7 +5,15 @@ chrome.runtime.sendMessage({
     urlPattern: location.href
 }, function(autofillInfo) {
     $.each(autofillInfo.action, function(idx, action) {
-        console.log(action);
+        var target = action.tagName + "[name='" + action.attrName + "']";
+
+        $(target).val(action.value);
+
+/*
+        if ($(target).attr("onchange")) {
+            $(target).tritter("change");
+        }
+*/
     });
 
     $(document).change(function(e) {
